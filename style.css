@@ -1,0 +1,68 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+:root { --fonte1: Verdana, Geneva, Tahoma, sans-serif; 
+        --fonte2: 'Cookie', cursive;
+        --font3: 'Slabo 27px', serif;}
+
+* { margin: 0px;
+    padding: 0px;}
+
+html, body { background-color: rgb(243, 191, 172);
+             min-height: 100%;
+            font-family:var(--fonte1)}
+             
+header { background-color: white;
+         color: rgb(89, 20, 20);
+         text-align: center;
+        font-family: var(--font3);}
+         
+header h1 { padding-top: 50px;
+            font-variant: small-caps;
+            font-family: var(--fonte3);
+            font-size: 9vw;}   
+            
+header p { padding-bottom: 50px;}  
+
+a { color: rgb(89, 20, 20);
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--fonte2);
+    font-size: 1.5em;}
+a:hover { text-decoration: underline;}  
+
+section.normal { background-color: rgb(118, 140, 81);
+                 color: white;
+                font-family: var(--fonte2);}
+
+section.imagem { background-color: rgb(245, 200, 184);
+                 color: rgb(89, 20, 20);
+                font-family: var(--fonte2);
+                box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.72);
+                background-attachment: fixed;}
+
+section.imagem > p { display: inline-block;
+                     background-color: rgba(223, 218, 183, 0.371);
+                     padding: 5px;
+                     font-weight: bolder;}  
+
+section#img01 { background-image: url(imagens/background001.jpg);
+                background-position: right center;
+                background-size: cover;}
+section#img02 { background-image: url(imagens/background002.jpg);
+                background-position: right center;
+                background-size: cover;}    
+
+section > p { padding-bottom: 2em;}
+
+section { padding-top: 10%;
+          padding-bottom: 10%;
+          line-height: 2em;
+          padding-left: 30px;
+          font-family: var(--fonte2);
+          font-size: 4vw;}                 
+            
+footer { background-color: white;
+         text-align: center;
+         padding: 10px;}
